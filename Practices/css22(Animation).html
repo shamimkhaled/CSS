@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation and Keyframes in CSS</title>
+    <style>
+      .container {
+        background-color: rgb(79, 198, 202);
+      }
+      .box {
+        background-color: rgb(114, 97, 177);
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        position: relative;
+        /* animation-name: khaled;
+        animation-name: khaled1;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2s; */
+        /* animation: animation-name, animation-duration, animation-timing-function, animation-delay,
+                    animation-iteration-count, animation-fill-mode; */
+        /* All these properties use in shorthand */
+        animation: khaled1 3s ease-in 2s 2 backwards;
+        /* animation-direction: alternate-reverse; */
+      }
+      @keyframes khaled {
+        from {
+          width: 250px;
+        }
+        to {
+          width: 800px;
+        }
+      }
+      @keyframes khaled1 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 200px;
+          left: 0px;
+        }
+        /* 50% {
+          top: 200px;
+          left: 200px;
+        } */
+        75% {
+          top: 200px;
+          left: 200px;
+        }
+        100% {
+          top: 0px;
+          left: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This is a box</div>
+    </div>
+  </body>
+</html>

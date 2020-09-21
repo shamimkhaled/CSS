@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:'Poppins', sans-serif;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color:black;
+            background-color: rgb(238, 115, 222);
+        }
+        a:visited{
+            background-color: springgreen;
+        }
+        a:active{
+            color: #fff;
+            background-color: yellow;
+        }
+        .container{
+            border: 2px solid red;
+            padding: 34px;
+            margin: 34px auto;
+            background-color: rgb(210, 224, 195);
+            width: 666px;
+        }
+        .btn{
+            background-color: rgb(124, 228, 241);
+            padding: 6px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            background-color: tomato;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont1" class="container">
+        <h1>This is my heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tenetur! Illum ullam, eaque repellat commodi numquam odio rerum enim repudiandae possimus vitae et laudantium dolore error hic dolor, id, nulla facilis nesciunt in eveniet!</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

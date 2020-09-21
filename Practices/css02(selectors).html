@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- types of css selectors: id selector, class selector, element selector, grouping selector -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        p{
+            color: teal;
+            border: 2px solid red;
+        }
+        /* id selector */
+        #redId{
+            color:tomato;
+        }
+        /* class selector */
+
+        .thirdPara{
+            color:yellowgreen;
+            background-color: black;
+        }
+        .bgBlue{
+            color:blue;
+        }
+        /* Grouping selector */
+        footer,span{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <span></span>
+    <p id="fId" class="firstPara">
+        This is a simple paragraph to demonstrate css selectors.
+    </p>
+    <p id="redId" class="SecondPara">
+        This is a simple paragraph to demonstrate css selectors.
+    </p>
+    <div >
+        <p class="thirdPara">
+            This is a simple paragraph inside div to demonstrate css selectors.
+        </p>
+    </div>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. 
+        <span>Chrome is the world's most popular web browser today!</span> Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <p class="bgBlue">Mozilla Firefox is an open-source web browser developed by Mozilla.</p>
+    <footer>this is footer.</footer>
+</body>
+</html>

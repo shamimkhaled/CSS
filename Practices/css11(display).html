@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            /* box-sizing: border-box; */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin: auto;
+            border: 4px solid red;
+            width: 1200px;
+            
+        }
+
+        img {
+            width: 38px;
+            margin: auto;
+            display: block;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 6px;
+            padding: 23px;
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box; 
+            float: left;
+        }
+        .container{
+            margin: auto; 
+            width: 1200px;
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="shamim.jpg" alt="shamim khaled">
+        <h3>Welcome to Khaled's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellendus tenetur minus magnam maiores sed quidem ut. Accusantium voluptate facilis dolorem commodi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque reiciendis magnam placeat eos?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellendus tenetur minus magnam maiores sed quidem ut. Accusantium voluptate facilis dolorem commodi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque reiciendis magnam placeat eos?</p>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellendus tenetur minus magnam maiores sed quidem ut. Accusantium voluptate facilis dolorem commodi et? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laudantium vero illum doloremque ipsum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

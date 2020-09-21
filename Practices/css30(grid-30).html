@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: rgb(190, 150, 190);
+            border: 2px solid black;
+            padding: 15px class="item";
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 300px) {
+            body {
+                background-color: cornsilk;
+            }
+            
+            .grid {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+          
+        }
+
+        @media only screen and (min-width: 301px) and (max-width: 680px) {
+            body {
+                background-color: red;
+                
+            }
+          
+
+            .grid {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+           
+            
+        }
+
+        @media only screen and (min-width: 681px) and (max-width: 841px) {
+            body {
+                background-color: rgb(8, 151, 161);
+            }
+
+            .grid {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer';
+            }
+          
+        }
+
+        @media only screen and (min-width: 841px) {
+            body {
+                background-color: rgb(32, 207, 90);
+            }
+
+            .grid {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer';
+            }
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <nav class="item">
+            <span>Home</span> 
+            <span>About</span> 
+            <span>Contact Us</span>
+        </nav>
+        <section class="item">
+            <h4>Learn CSS3 in 20minutes</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magni earum beatae veritatis quod doloribus id molestias cumque inventore culpa! Voluptatem dolorum neque repudiandae a animi ea, possimus hic asperiores magni, nostrum deserunt eius cupiditate vitae recusandae quod repellat molestiae sapiente soluta saepe ullam porro illo eligendi tenetur maxime. Quos a explicabo quaerat ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem labore, possimus dolorem, impedit fuga reprehenderit velit eveniet consequuntur culpa nulla dolorum quibusdam sequi, esse rem dicta! Ipsa itaque maiores et porro eaque! Recusandae quae asperiores quisquam consectetur? Officiis accusamus necessitatibus ducimus vel mollitia debitis! Ratione quasi voluptatum officia qui repudiandae, asperiores ea sit, dolores laboriosam excepturi deleniti reiciendis animi tempore porro tenetur architecto voluptas dolorum suscipit consequuntur velit veritatis. Sint nostrum facere, totam sequi iure quae. Fugit sequi numquam laudantium labore voluptate accusantium officia tenetur assumenda nihil ratione modi maiores molestias nesciunt dolorum distinctio, hic perspiciatis earum quidem. Repudiandae, nesciunt illum eum tempora vel non similique. Maiores accusantium officia placeat possimus maxime omnis temporibus nam eveniet sunt non, illum, magnam nisi, veritatis odit numquam amet error adipisci ea rerum consectetur. Fugit, beatae asperiores! Maxime reprehenderit iusto tempora laudantium magnam, error quos assumenda alias culpa? Ipsum soluta alias consequuntur suscipit.
+        </section>
+        <aside class="item">
+            <h3>More about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus labore magni impedit eius dignissimos, cumque officia libero vitae!</p>
+        </aside>
+        <footer class="item">Copyright &copy; All reserved 2020</footer>
+    </div>
+</body>
+
+</html>
