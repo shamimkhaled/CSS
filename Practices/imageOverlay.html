@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay in CSS</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .parent-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #485460;
+        }
+        .child-div{
+            width: 50vw;
+            height: 60vh;
+            background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url('nature.jpg');
+            background-size: 100% 100%;
+            box-shadow: 0 10px 20px -6px #000;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .child-div{
+                background-image: linear-gradient( rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.6)), url('nature.jpg');
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <div class="child-div">
+
+        </div>
+    </div>
+</body>
+</html>

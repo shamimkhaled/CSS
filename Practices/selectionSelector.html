@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Selector in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color: red;
+        }
+
+        body {
+            background-color: rgb(157, 212, 216);
+        }
+
+
+        ::selection {
+            background: blue;
+            color: white;
+        }
+
+        h3::selection {
+            background: yellow;
+            color: red;
+        }
+
+        p::selection {
+            background-color: black;
+            color:red;
+        }
+
+        .main {
+            width: 60%;
+            display: block;
+            border: 2px solid red;
+            margin: 12px auto;
+            padding: 5px 7px;
+        }
+
+        h3 {
+            padding-bottom: 4px;
+            color: var(--color);
+            text-align: center;
+        }
+
+        p {}
+
+        .container {
+            display: flex;
+        }
+
+        .box1 {
+            width: 50%;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            margin: 8px;
+            padding: 8px;
+        }
+
+        .box2 {
+            width: 50%;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            margin: 8px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3>HTML5</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, cupiditate! Consequatur natus nobis
+            impedit magnam rerum, quod, sapiente sint aspernatur iure ipsum fuga. Ea esse iusto natus tempora aspernatur
+            veritatis fugiat quas soluta? Quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            aperiam adipisci earum consequatur quasi, nemo incidunt corrupti. Itaque non cum, iure quae ullam quibusdam
+            ad ut nulla nobis adipisci provident hic corrupti sit incidunt.
+
+        </p>
+    </div>
+
+
+    <div class="container">
+
+        <div class="box1" id="box">
+            <h3>Cascading Style Sheet</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, earum sunt. Impedit odio blanditiis
+                dolorem possimus delectus illum placeat qui, a repellendus distinctio recusandae, nesciunt esse quasi,
+                neque maxime? Aspernatur perferendis reprehenderit dicta cupiditate. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Perferendis inventore expedita, nobis ad quo nisi laborum aliquam
+                laboriosam facere sapiente!
+
+            </p>
+        </div>
+        <div class="box2">
+            <h3>Javascript</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, earum sunt. Impedit odio blanditiis
+                dolorem possimus delectus illum placeat qui, a repellendus distinctio recusandae, nesciunt esse quasi,
+                neque maxime? Aspernatur perferendis reprehenderit dicta cupiditate. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Perferendis inventore expedita, nobis ad quo nisi laborum aliquam
+                laboriosam facere sapiente!
+
+            </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

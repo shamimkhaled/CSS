@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        :root{
+            --var-width: 100vw;
+        }
+        .main-div{
+            width: 100vw;
+            height: 100vh;
+            padding-top: 5%;
+            text-align: center;
+            background-color: whitesmoke;
+            font-size: 3.3rem;
+            
+        }
+        h1{
+            font-family: 'Grenze Gotisch', cursive;
+            color: rgb(8, 115, 134);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            
+        }
+        h1::after{
+            content:"\f005";
+            color: #1abc9c;
+            font-size: 3.5rem;
+            width: 20vw;
+            height: 25px;
+            font-family: "Font Awesome 5 Free";
+            display: block;
+            margin:  0 auto;
+            border-bottom: 7px solid cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <h1>Javascript</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bef-af-width: 25vw;
+            --bef-af-medium-width: 35vw;
+            --bef-af-mobile-width: 45vw;
+        }
+
+        body {
+            background-color: rgb(55, 161, 180);
+            font-size: 1.8rem;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            width: var(--bef-af-width);
+            border-bottom: 8px solid #2c3e50;
+        }
+
+
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translate(-50%);
+
+            width: var(--bef-af-width);
+            border-bottom: 8px solid #2c3e50;
+        }
+
+        @media screen and (max-width: 768px){
+            h1::before {
+            
+            width: var(--bef-af-mobile-width);
+        }
+
+
+        h1::after {
+
+            width: var(--bef-af-mobile-width);
+            
+        }
+        }
+
+      
+
+        .main-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Grenze Gotisch', cursive;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <h1>Cascading Style Sheet</h1>
+    </div>
+</body>
+
+</html>
